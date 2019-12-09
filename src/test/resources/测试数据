@@ -1,0 +1,12 @@
+用hash的json序列化的方式存储数据用时871毫秒
+
+用hash的jdk序列化的方式存储数据用时1210毫秒
+
+用list的json序列化的方式存储数据用时781毫秒
+
+用list的jdk序列化的方式存储数据用时741毫秒
+
+总结：当同样用jdk序列化方式的情况下list要比hash存储快的。
+当同样用json序列化方式的情况下list还要比hash存储快的。
+当用list时用jdk的比json快
+所以存储时间上list完败hash！！！！
