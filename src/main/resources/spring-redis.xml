@@ -54,16 +54,16 @@
 				class="org.springframework.data.redis.serializer.StringRedisSerializer" />
 		</property>
 		<!-- jdk序列化 -->
-		<property name="valueSerializer">
-			<bean
-				class="org.springframework.data.redis.serializer.JdkSerializationRedisSerializer" />
-		</property>
-		
-		<!-- json序列化 -->
 		<!-- <property name="valueSerializer">
 			<bean
-				class="org.springframework.data.redis.serializer.GenericJackson2JsonRedisSerializer" />
+				class="org.springframework.data.redis.serializer.JdkSerializationRedisSerializer" />
 		</property> -->
+		
+		<!-- json序列化 -->
+		<property name="valueSerializer">
+			<bean
+				class="org.springframework.data.redis.serializer.GenericJackson2JsonRedisSerializer" />
+		</property>
 		
 
 		<!-- hash小键的序列化 -->
